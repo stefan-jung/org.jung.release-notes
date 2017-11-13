@@ -1,2 +1,5 @@
 *.xpr
 build_install.xml
+out/
+temp/
+*.zip
