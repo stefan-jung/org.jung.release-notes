@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <booktitle>
+        <mainbooktitle>Release Management</mainbooktitle>
+    </booktitle>
+    <bookmeta>
+        <critdates>
+            <created date="2015-01-01"/>
+            <revised modified="2015-02-01"/>
+            <revised modified="2015-03-01"/>
+            <revised modified="2016-04-01"/>
+        </critdates>
+        
+        <!-- 
+            This snippet represents the release-management example 3 of the
+            OASIS Release Management White Paper.
+        -->
+        <change-historylist>
+            <change-item>
+                <change-completed>2015-07-20</change-completed>
+                <change-summary>Document title updated from "Widget Repair" to "Widget X2 Repair".</change-summary>
+                <data>Product has been updated and the document has been expanded with fresh examples of widget repair.</data>
+            </change-item>
+            <change-item>
+                <change-completed>2013-11-01</change-completed>
+                <change-summary>Original document title changed from "Foobar Repair" to "Widget Repair"</change-summary>
+                <data>Original product name has been changed, with "Widget" the official product name. Content has also been 
+                    updated to include the latest content up to the time of its official release.</data>
+            </change-item>
+        </change-historylist>
+        
+    </bookmeta>
+    <frontmatter>
+        <booklists>
+            <toc/>
+            <booklist type="change-historylist"/>
+            <tablelist/>
+        </booklists>
+    </frontmatter>
+    <chapter href="example1.dita"/>
+    <chapter href="example2.dita"/>
+</bookmap>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vars xmlns="http://www.idiominc.com/opentopic/vars">
+    <!-- The heading string to put at the top of the List of Changes -->
+    <variable id="List of Changes">List of Changes</variable>
+    
+    <variable id="Book Release Date">Book Release Date: </variable>
+    
+    <!-- List -->
+    <variable id="Release Notes List Changed By">, Changed by: </variable>
+    <variable id="Release Notes List Requested By">, Requested by: </variable>
+    <variable id="Release Notes List Revision ID">, Revision ID: </variable>
+    <variable id="Release Notes List Started">, Started: </variable>
+    <variable id="Release Notes List Completed">, Completed: </variable>
+    <variable id="Release Notes List Summary"></variable>
+    <variable id="Release Notes List Request System">, Request System: </variable>
+    <variable id="Release Notes List Request ID">, Request ID: </variable>
+    
+    <!-- Table -->
+    <variable id="Release Notes Table Changed By">Changed by</variable>
+    <variable id="Release Notes Table Requested By">Requested by</variable>
+    <variable id="Release Notes Table Revision ID">Revision ID</variable>
+    <variable id="Release Notes Table Started">Started</variable>
+    <variable id="Release Notes Table Completed">Completed</variable>
+    <variable id="Release Notes Table Summary">Summary</variable>
+    <variable id="Release Notes Table Request System">Request System</variable>
+    <variable id="Release Notes Table Request ID">Request ID</variable>
+    
+    <!-- Date format string -->
+    <variable id="#date-format">[M]/[D]/[Y]</variable>
+</vars>

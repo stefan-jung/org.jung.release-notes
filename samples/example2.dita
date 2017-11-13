@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example2">
+    <title>Example 2</title>
+ <shortdesc>This topic contains the release-management <b>example 2</b> from the <xref href="https://www.oasis-open.org/committees/download.php/56339/Release_Management_WP.pdf" format="html" scope="external">OASIS Release Management White Paper</xref>.</shortdesc>
+    <prolog>
+        <change-historylist>
+            <change-item product="productA productB">
+                <change-person>Bill Carter</change-person>
+                <change-completed>2013-03-23</change-completed>
+                <change-summary>Made change 1 to both products</change-summary>
+                <data>Details of change 1</data>
+            </change-item>
+            <change-item product="productA">
+                <change-person>Phil Ford</change-person>
+                <change-completed>2013-06-07</change-completed>
+                <change-summary>Made change 2 to product A</change-summary>
+                <data>Details of change 2</data>
+            </change-item>
+            <change-item product="productA productB">
+                <change-person>Bill Carter</change-person>
+                <change-completed>2013-07-20</change-completed>
+                <change-summary>Made change 3 to both products</change-summary>
+                <data>Details of change 3</data>
+            </change-item>
+        </change-historylist>
+    </prolog>
+    <conbody/>
+</concept>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="example1">
+    <title>Example 1</title>
+    <shortdesc>This topic contains the release-management <b>example 1</b> from the <xref href="https://www.oasis-open.org/committees/download.php/56339/Release_Management_WP.pdf" format="html" scope="external">OASIS Release Management White Paper</xref>.</shortdesc>
+    <prolog>
+        <change-historylist>
+            <change-item>
+                <change-person>John Smythe</change-person>
+                <change-organization>Engineering</change-organization>
+                <change-revisionid>topic-change-001</change-revisionid>
+                <change-request-reference>
+                    <change-request-system>BugTracker Pro</change-request-system>
+                    <change-request-id>BT001</change-request-id>
+                </change-request-reference>
+                <change-started>2014-10-15</change-started>
+                <change-completed>2014-10-22</change-completed>
+                <change-summary>Description of new foo feature added.</change-summary>
+                <data>New feature addition for v3, originally relating from a UI change request that came in from a customer</data>
+            </change-item>
+            <change-item>
+                <change-person>John Smythe</change-person>
+                <change-organization>Engineering</change-organization>
+                <change-revisionid>topic-change-002</change-revisionid>
+                <change-request-reference>
+                    <change-request-system>BugTracker Pro</change-request-system>
+                    <change-request-id>BT002</change-request-id>
+                </change-request-reference>
+                <change-started>2014-10-16</change-started>
+                <change-completed>2015-02-17</change-completed>
+                <change-summary>Description of new foobar feature added.</change-summary>
+                <data>New feature addition for v2, originally relating from feature request that came in from a customer</data>
+            </change-item>
+        </change-historylist>
+    </prolog>
+    <conbody/>
+</concept>
