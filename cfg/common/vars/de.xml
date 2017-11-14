@@ -23,7 +23,7 @@
     <variable id="Release Notes Table Completed">Abgeschlossen</variable>
     <variable id="Release Notes Table Summary">Zusammenfassung</variable>
     <variable id="Release Notes Table Request System">Ticket-System</variable>
-    <variable id="Release Notes Table Request ID">Ticket-IDID</variable>
+    <variable id="Release Notes Table Request ID">Ticket-ID</variable>
     
     <!-- Date format string -->
     <variable id="#date-format">[D].[M].[Y]</variable>
