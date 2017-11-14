@@ -3,7 +3,6 @@
 <plugin id="org.doctales.release-notes">
     <require plugin="org.dita.pdf2"/>
     <feature extension="dita.conductor.pdf2.param" file="parameters.xml"/>
-    <feature extension="dita.conductor.transtype.check" value="release-notes"/>
     <feature extension="dita.xsl.xslfo" file="xsl/fo/topic2fo_shell_fop.xsl"/>
     <feature extension="dita.xsl.strings" file="cfg/common/vars/strings.xml"/>
     <feature extension="org.dita.pdf2.xsl.topicmerge" file="xsl/fo/topicmergeImpl.xsl"/>
