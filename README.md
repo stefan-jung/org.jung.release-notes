@@ -38,3 +38,31 @@ Publish a `pdf2` based PDF. You can optionally set the `changelist.style` proper
 ```shell
 dita --input your.ditamap --format pdf -Dchangelist.style=table
 ```
+
+Usage with custom pdf2 based plugins
+------------------------------------
+
+If you like to use this plugin with custom `pdf2` based plugins that use a shell XSL file which is passed to the DITA-OT by using the `args.xsl.pdf` extension point, you need to add some additional `<xsl:import>` statements to make this plugin work correctly.
+
+> **Info**: This is, for example, the case, when you have generated your plugin using the [dita-generator](http://dita-generator-hrd.appspot.com/).
+
+Add the top of your shell XSL add:
+
+```xml
+<xsl:import href="plugin:org.dita.pdf2:xsl/fo/topic2fo.xsl"/>
+```
+
+Add the bottom of your shell XSL add:
+
+```xml
+<xsl:import href="plugin:org.doctales.release-notes:xsl/fo/root-processing.xsl"/>
+<xsl:import href="plugin:org.doctales.release-notes:cfg/fo/attrs/release-notes.xsl"/>
+<xsl:import href="plugin:org.doctales.release-notes:xsl/fo/release-notes.xsl"/>
+```
+
+Because you now have added a hard dependency to **org.doctales.release-notes**, you should explicitely name it so by adding the following `<require>` element to your **plugin.xml**:
+
+```xml
+<require plugin="org.doctales.release-notes"/>
+```
+
