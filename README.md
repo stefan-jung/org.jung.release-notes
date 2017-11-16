@@ -46,13 +46,13 @@ If you like to use this plugin with custom `pdf2` based plugins that use a shell
 
 > **Info**: This is, for example, the case, when you have generated your plugin using the [dita-generator](http://dita-generator-hrd.appspot.com/).
 
-Add the top of your shell XSL add:
+At the top of your shell XSL add:
 
 ```xml
 <xsl:import href="plugin:org.dita.pdf2:xsl/fo/topic2fo.xsl"/>
 ```
 
-Add the bottom of your shell XSL add:
+At the bottom of your shell XSL add:
 
 ```xml
 <xsl:import href="plugin:org.doctales.release-notes:xsl/fo/root-processing.xsl"/>
