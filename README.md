@@ -39,6 +39,8 @@ Publish a `pdf2` based PDF. You can optionally set the `changelist.style` proper
 dita --input your.ditamap --format pdf -Dchangelist.style=table
 ```
 
+You can find more information in the [documentation](https://doctales.atlassian.net/wiki/x/T4APAw).
+
 Usage with custom pdf2 based plugins
 ------------------------------------
 
