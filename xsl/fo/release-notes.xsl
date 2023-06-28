@@ -2,14 +2,14 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:fo="http://www.w3.org/1999/XSL/Format"
-    xmlns:doctales="http://doctales.github.io"
+    xmlns:sj="https://stefanjung.netlify.app"
     xmlns:opentopic="http://www.idiominc.com/opentopic"
     xmlns:opentopic-index="http://www.idiominc.com/opentopic/index"
     xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function"
     xmlns:dita2xslfo="http://dita-ot.sourceforge.net/ns/200910/dita2xslfo"
     xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot"
     xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder"
-    exclude-result-prefixes="dita-ot ot-placeholder doctales opentopic opentopic-index opentopic-func dita2xslfo xs"
+    exclude-result-prefixes="dita-ot ot-placeholder opentopic opentopic-index opentopic-func dita2xslfo sj xs"
     version="2.0">
     
     <!-- Style of the change list, allowed values: 'list' and 'table' -->
@@ -28,7 +28,7 @@
         </xsl:call-template>
     </xsl:variable>
     
-    <xsl:function name="doctales:bookReleaseHasChangeItems" as="xs:boolean">
+    <xsl:function name="sj:bookReleaseHasChangeItems" as="xs:boolean">
         <xsl:param name="previousReleaseDate" as="xs:date"/>
         <xsl:param name="releaseDate" as="xs:date"/>
         
@@ -164,7 +164,7 @@
                         <xsl:value-of select="format-date($currentBookReleaseDate, $dateFormat)"/>
                     </fo:block>
                     
-                    <xsl:if test="doctales:bookReleaseHasChangeItems($previousBookReleaseDate, $currentBookReleaseDate)">
+                    <xsl:if test="sj:bookReleaseHasChangeItems($previousBookReleaseDate, $currentBookReleaseDate)">
                         
                         <xsl:choose>
                             
