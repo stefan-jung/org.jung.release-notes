@@ -38,10 +38,10 @@
                                     <String></String>
                                 </field>
                                 <field name="buildTarget">
-                                    <String></String>
+                                    <String>install</String>
                                 </field>
                                 <field name="buildFilePath">
-                                    <String>${cfne}</String>
+                                    <String>${pd}/build_install.xml</String>
                                 </field>
                                 <field name="ditaParams">
                                     <list>
@@ -86,7 +86,7 @@
                                     <String></String>
                                 </field>
                                 <field name="workingDir">
-                                    <String>${cfd}</String>
+                                    <String>${pd}</String>
                                 </field>
                                 <field name="showConsoleAlways">
                                     <Boolean>true</Boolean>
@@ -170,7 +170,12 @@
                                     <String>ANT</String>
                                 </field>
                                 <field name="extensionURLs">
-                                    <String-array/>
+                                    <String-array>
+                                        <String>${configured.ditaot.dir.url}/config/</String>
+                                        <String>${configured.ditaot.dir.url}/plugins/com.oxygenxml.dost.patches/lib/*.jar</String>
+                                        <String>${configured.ditaot.dir.url}/lib/saxon/*.jar</String>
+                                        <String>${configured.ditaot.dir.url}/lib/*.jar</String>
+                                    </String-array>
                                 </field>
                             </antScenario>
                         </scenario-array>

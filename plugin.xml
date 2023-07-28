@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
 <plugin id="org.jung.release-notes">
+    
     <require plugin="org.dita.pdf2"/>
     <feature extension="dita.conductor.pdf2.param" file="parameters.xml"/>
     <feature extension="dita.xsl.xslfo" file="xsl/fo/topic2fo_shell_fop.xsl"/>
     <feature extension="dita.xsl.strings" file="cfg/common/vars/strings.xml"/>
     <feature extension="org.dita.pdf2.xsl.topicmerge" file="xsl/fo/topicmergeImpl.xsl"/>
+    
+    <transtype name="pdf" abstract="true" desc="Provides release-notes params">
+        <param name="changelist.style" type="enum">
+            <val default="true">list</val>
+            <val>table</val>
+        </param>
+    </transtype>
+    
 </plugin>

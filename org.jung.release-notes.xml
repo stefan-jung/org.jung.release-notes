@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="https://www.dita-ot.org/project">
+
+  <deliverable name="Release Notes Samples" id="release-notes-samples">
+    <context name="Release Notes Samples" id="release-notes-samples-context">
+      <input href="samples/ReleaseManagement.ditamap"/>
+    </context>
+    <output href="./pdf"/>
+    <publication transtype="pdf">
+      <param name="changelist.style" value="list"/>
+    </publication>
+  </deliverable>
+
+</project>
