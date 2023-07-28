@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="install" default="install">
+    
+    <target name="install">
+        <mkdir dir="${dita.dir}/plugins/org.doctales.release-notes"/>
+        <copy todir="${dita.dir}/plugins/org.doctales.release-notes">
+            <fileset dir="."/>
+        </copy>
+        <!-- Unix -->
+        <exec taskname="dita-cmd" executable="${dita.dir}/bin/dita" osfamily="unix" failonerror="true">
+            <arg value="--install"/>
+            <arg value="--verbose"/>
+        </exec>
+        <!-- Windows -->
+        <exec taskname="dita-cmd" dir="${dita.dir}/bin" executable="cmd" osfamily="windows" failonerror="true">
+            <arg value="/C"/>
+            <arg value="dita --install --verbose"/>
+        </exec>
+    </target>
+    
+</project>
